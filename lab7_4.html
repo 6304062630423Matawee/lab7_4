@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script>
+            function countTheword(str)
+            {
+                var regex = new RegExp("The", "gi");
+                var count = (str.match(regex) || []).length;
+                alert("มี The ทั้งหมด " + count + " คำ ");
+
+            }
+        </script>
+    </head>
+    <body>
+        The eighth ruler of the fifth Dynasty in the late 25th century.<br><br>
+        <a href="#" onclick="countTheword('The eighth ruler of the Fifth Dynasty i the late 25th century')">ฉlick for count 'th'</a>
+
+    </body>
+</html>
